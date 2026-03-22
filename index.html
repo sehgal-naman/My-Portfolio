@@ -256,24 +256,44 @@ nav.scrolled { box-shadow: var(--shadow-sm); }
   justify-content: space-between; padding: 0 22px;
   position: relative; user-select: none;
 }
-.mob-card-strip.s1 {
-    background-image: url(snake.png);
+/* .mob-card-strip.s1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)),url(snake.png);
     background-size: cover; 
-  }
+    background-repeat: no-repeat;
+    background-position: center -110px;
+    
+  } */
+
+  .mob-card-strip.s1 {
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("snake.png");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* 2 background → 2 positions needed */
+  background-position: 
+    center,          /* gradient position   code mera bhi same tha pr yha aisa kyu hua doubt.......*/    
+    0vw -110px;      /* image position */
+}
 .mob-card-strip.s2 { 
-    background-image: url(crush-img.png);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(crush-img.png);
     background-size:contain;
     background-repeat: no-repeat;
     background-position: center; 
   }
 .mob-card-strip.s3 {  
-    background-image: url(corporate.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(corporate.jpg);
     background-size:cover;
+    background-repeat: fill;
+    background-position: center;
    }
 .mob-strip-left { display: flex; flex-direction: column; gap: 2px; }
-.mob-strip-num { font-size: 9.5px; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.5); }
-.mob-strip-title { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 600; color: rgba(255,255,255,0.92); }
-.mob-strip-arrow { font-size: 16px; color: rgba(255,255,255,0.6); transition: transform var(--ease); flex-shrink: 0; margin-left: 12px; }
+.mob-strip-num { font-size: 9.5px; letter-spacing: 2px; text-transform: uppercase; color: rgba(232, 235, 225, 0.5); }
+.mob-strip-title { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 600; color: rgb(255, 255, 255); }
+.mob-unique { color: var(--cream); }
+.mob-strip-arrow { font-size: 16px; color: rgba(12, 11, 11, 0.6); transition: transform var(--ease); flex-shrink: 0; margin-left: 12px; }
 .mob-card.open .mob-strip-arrow { transform: rotate(180deg); }
 .mob-card-content {
   max-height: 0; overflow: hidden; background: var(--white);
@@ -454,7 +474,7 @@ footer { background: var(--brown-dark); color: var(--cream); padding: 56px 0 36p
           <div class="mob-card-strip s1">
             <div class="mob-strip-left">
               <div class="mob-strip-num">01 · Web Application</div>
-              <div class="mob-strip-title">Snake Game 🐍</div>
+              <div class="mob-strip-title">Snake Game </div>
             </div>
             <span class="mob-strip-arrow">▾</span>
           </div>
@@ -494,7 +514,7 @@ footer { background: var(--brown-dark); color: var(--cream); padding: 56px 0 36p
           <div class="mob-card-strip s3">
             <div class="mob-strip-left">
               <div class="mob-strip-num">03 · AI  Web Application</div>
-              <div class="mob-strip-title">Corporate Bhasha</div>
+              <div class="mob-strip-title mob-unique">Corporate Bhasha</div>
             </div>
             <span class="mob-strip-arrow">▾</span>
           </div>

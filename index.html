@@ -256,9 +256,20 @@ nav.scrolled { box-shadow: var(--shadow-sm); }
   justify-content: space-between; padding: 0 22px;
   position: relative; user-select: none;
 }
-.mob-card-strip.s1 { background: linear-gradient(135deg, #c9a882 0%, #7a5030 100%); }
-.mob-card-strip.s2 { background: linear-gradient(135deg, #d4b896 0%, #5c3d1e 100%); }
-.mob-card-strip.s3 { background: linear-gradient(135deg, #e8d9c5 0%, #8b6340 100%); }
+.mob-card-strip.s1 {
+    background-image: url(snake.png);
+    background-size: cover; 
+  }
+.mob-card-strip.s2 { 
+    background-image: url(crush-img.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+  }
+.mob-card-strip.s3 {  
+    background-image: url(corporate.jpg);
+    background-size:cover;
+   }
 .mob-strip-left { display: flex; flex-direction: column; gap: 2px; }
 .mob-strip-num { font-size: 9.5px; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.5); }
 .mob-strip-title { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 600; color: rgba(255,255,255,0.92); }
@@ -443,18 +454,17 @@ footer { background: var(--brown-dark); color: var(--cream); padding: 56px 0 36p
           <div class="mob-card-strip s1">
             <div class="mob-strip-left">
               <div class="mob-strip-num">01 · Web Application</div>
-              <div class="mob-strip-title">Task Flow Manager</div>
+              <div class="mob-strip-title">Snake Game 🐍</div>
             </div>
             <span class="mob-strip-arrow">▾</span>
           </div>
           <div class="mob-card-content">
             <div class="mob-card-inner">
               <div class="mob-cat">Web Application</div>
-              <div class="mob-title">Task Flow Manager</div>
-              <p class="mob-desc">A productivity app to organise tasks, set priorities, and track progress — with a clean drag-and-drop interface and real-time updates.</p>
+              <div class="mob-title">Snake Game 🐍</div>
+              <p class="mob-desc">A classic Snake Game built using HTML, CSS, and JavaScript where the player controls a snake to eat food, grow longer, and avoid collisions</p>
               <div class="mob-footer">
-                <div class="mob-tags"><span class="mob-tag">React</span><span class="mob-tag">Node</span></div>
-                <a href="#" class="btn-card">View Project</a>
+                <a href="https://sehgal-naman.github.io/snake-game-/" target="_blank" class="btn-card">View Project</a>
               </div>
             </div>
           </div>
@@ -463,19 +473,18 @@ footer { background: var(--brown-dark); color: var(--cream); padding: 56px 0 36p
         <div class="mob-card" data-mob>
           <div class="mob-card-strip s2">
             <div class="mob-strip-left">
-              <div class="mob-strip-num">02 · Full Stack</div>
-              <div class="mob-strip-title">Campus Connect</div>
+              <div class="mob-strip-num">02 · Web Application</div>
+              <div class="mob-strip-title">Crush Compatibility Calculator</div>
             </div>
             <span class="mob-strip-arrow">▾</span>
           </div>
           <div class="mob-card-content">
             <div class="mob-card-inner">
-              <div class="mob-cat">Full Stack</div>
-              <div class="mob-title">Campus Connect</div>
-              <p class="mob-desc">A social platform for university students to share resources, organise study groups, and collaborate on coursework seamlessly.</p>
+              <div class="mob-cat">Web Application</div>
+              <div class="mob-title">Crush Compatibility Calculator</div>
+              <p class="mob-desc">A fun and interactive Crush Compatibility Calculator built using HTML, CSS, and JavaScript, featuring logic-based results and humorous insights based on user inputs.</p>
               <div class="mob-footer">
-                <div class="mob-tags"><span class="mob-tag">Python</span><span class="mob-tag">Django</span></div>
-                <a href="#" class="btn-card">View Project</a>
+                <a href="https://sehgal-naman.github.io/Crush-Calculator/" target="_blank" class="btn-card">View Project</a>
               </div>
             </div>
           </div>
@@ -484,19 +493,18 @@ footer { background: var(--brown-dark); color: var(--cream); padding: 56px 0 36p
         <div class="mob-card" data-mob>
           <div class="mob-card-strip s3">
             <div class="mob-strip-left">
-              <div class="mob-strip-num">03 · AI / Automation</div>
-              <div class="mob-strip-title">Smart Resume Parser</div>
+              <div class="mob-strip-num">03 · AI  Web Application</div>
+              <div class="mob-strip-title">Corporate Bhasha</div>
             </div>
             <span class="mob-strip-arrow">▾</span>
           </div>
           <div class="mob-card-content">
             <div class="mob-card-inner">
-              <div class="mob-cat">AI / Automation</div>
-              <div class="mob-title">Smart Resume Parser</div>
-              <p class="mob-desc">An intelligent tool that reads resume PDFs, extracts key info, and ranks candidates — cutting screening time by over 70%.</p>
+              <div class="mob-cat">AI Web Application</div>
+              <div class="mob-title">Corporate Bhasha</div>
+              <p class="mob-desc">A full-stack AI web application that converts direct or informal sentences into professional corporate language using natural language processing. Built with HTML, CSS, JavaScript, Node.js, and OpenAI API, the app demonstrates secure API handling and real-world AI integration.<p>
               <div class="mob-footer">
-                <div class="mob-tags"><span class="mob-tag">Python</span><span class="mob-tag">NLP</span></div>
-                <a href="#" class="btn-card">View Project</a>
+                <a href="https://corporate-bhasha.onrender.com" target="_blank" class="btn-card">View Project</a>
               </div>
             </div>
           </div>
